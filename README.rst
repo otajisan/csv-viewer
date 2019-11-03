@@ -28,3 +28,27 @@ install develop package
 ```
 $ pip install -e .
 ```
+
+# References
+
+install pyenv-virtualenv on anyenv x pyenv environment
+
+```
+$ git clone https://github.com/pyenv/pyenv-virtualenv.git  ~/.anyenv/envs/pyenv/plugins/pyenv-virtualenv
+```
+
+```
+$ echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+```
+
+make new virtualenv
+
+```
+$ pyenv virtualenv 3.6.6 csv-viewer
+```
+
+use created virtual env
+
+```
+$ pyenv global 3.6.6/envs/csv-viewer
+```
